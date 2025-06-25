@@ -60,13 +60,10 @@
       </header>
 
       <main class="content">
-         <!--need help with step 4 sizing and spacing-->
          <section class="recipes">
           <h2 class="recipes__title">Recipes</h2>
           <p class="recipes__subtitle">Check out some recipes we'ce collected for your home-brewing convenience</p>
           <ul class="recipes__videos">
-            <!--need to put flexbox for videos i think-->
-            <!--video captions look off and not next to eachother-->
            <li class="recipes__video" >
              <iframe class="recipes__iframe" src="https://www.youtube.com/embed/st571DYYTR8?si=SEXeJFyoL7ZlguCr" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
              <div class="recipes__video-caption">
@@ -84,6 +81,31 @@
             </li>
           </ul>
 
+         </section>
+         <section class="reservation">
+          <h2 class="reservation__title">Book a table</h2>
+          <form class="form reservation__form">
+          <fieldset class="form__fieldset">
+            <label for="name" class="form__label">Name
+            <input type="text" class="form__input" id="name" placeholder="Name Surname" required>
+            </label>
+             <label for="guests" class="form__label">Number of guests
+            <input type="number" class="form__input" id="guests" placeholder="1-8" required>
+            </label>
+             <label for="date" class="form__label">Date & Time
+            <input type="datetime-local" class="form__input" id="date" required>
+            </label>
+
+             <label for="email" class="form__label">Your email
+            <input type="email" class="form__input" id="email" placeholder="email@email.com" required>
+            </label>
+          </fieldset>
+          <button type="submit" class="form__button">Book a table</button>
+          <label for="checkbox" class="form__label form__label_type_checkbox">
+          <input type="checkbox" class="form__checkbox" id="checkbox" required>
+          I agree with the terms of use
+          </label>
+          </form>
          </section>
       </main>
 
